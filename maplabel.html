@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Map Label Utility Library</title>
+   <script data-main="app" src="libs/require.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<link rel="stylesheet" type="text/css" href="css/myapp.css" />
+    
+  </head>
+  <body>
+  <input type="button" id="login" value="Sign with Google Account"/>
+  <div id="leftMenu">
+	<input type="button" id="logout" value="Logout" style="display:none"/>
+	<div id="profile">
+		<label class="username"> </label>
+		<br>
+		<img></img>
+	</div>
+  </div>
+  <div id="mapWindow" style="display:none">
+    <h1>Change Location using Coordinates</h1>
+    <div id="map"></div>
+	<div>
+      <label>Latitude:</label>
+      <input type="text" id="cordintateX" value="28.6100"><br>
+	  <br>
+	  <label>Longitude</label>
+	  <input type="text" id="cordintateY" value="77.2300"><br>
+	  <br>
+	  <label>Enter Location Name:</label>
+	  <input type="text" id="text" placeholder="Enter Location"><br>
+	  <br>
+      <button id="changecordinates">Change Location</button>
+    </div>
+	</div>
+  </body>
+</html>

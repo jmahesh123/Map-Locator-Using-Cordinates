@@ -1,0 +1,58 @@
+	#login{
+		border: 1px solid #3079ED;
+		color: #FFF;
+		text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+		background-color: #4D90FE;
+		background-image: -webkit-linear-gradient(center top , #4D90FE, #4787ED);
+		font-size: 20px;
+		border-radius: 3px;
+		transition: all 0.218s ease 0s;
+		top: 35%;
+		position: absolute;
+		left: 35%;
+		width: 25%;
+		height: 15%;
+		cursor:pointer;
+	}
+
+	body {
+		font-family: sans-serif;
+	}
+	
+	#leftMenu{
+		float:right;
+		width: 25%;
+	}
+	
+	#logout, #changecordinates{
+		border: 1px solid #3079ED;
+		color: #FFF;
+		text-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+		background-color: #4D90FE;
+		background-image: -webkit-linear-gradient(center top , #4D90FE, #4787ED);
+		border-radius: 3px;
+		transition: all 0.218s ease 0s;
+		cursor:pointer;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 10px;
+		padding-right: 10px
+	}
+
+	#map{
+		width: 500px; height: 500px; float: left;margin:20px;
+	}
+	.username{
+		color: #7A6488;
+		font-size: 20px;
+		font-family: monospace;
+	}
+	input[type="text"] {
+		padding: 6px;
+		border: solid 1px #dcdcdc;
+		transition: box-shadow 0.3s, border 0.3s;
+	}
+	input[type="text"]:focus {
+		border: solid 1px #707070;
+		box-shadow: 0 0 5px 1px #969696;
+	}

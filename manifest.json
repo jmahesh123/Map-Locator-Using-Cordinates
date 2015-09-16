@@ -1,0 +1,32 @@
+{
+	"name": "Trace Location",
+	"description": "Location tracer app",
+	"version": "1.49",
+	"manifest_version": 2,
+	"minimum_chrome_version": "29",
+	"app": {
+	  "background": {
+	    "scripts": ["libs/require.js","background.js"]
+	  }
+	},
+	 "oauth2": {
+	    "client_id": "212600360080-bk8k7kn7le993u3d4d6ms7ah8mq8f3k8.apps.googleusercontent.com",
+	    "scopes": ["https://www.googleapis.com/auth/plus.login",
+								"https://www.googleapis.com/auth/plus.me",
+								"https://www.googleapis.com/auth/userinfo.email"
+					]
+  	},
+  "permissions": ["fileSystem",
+		    "fileSystem",
+		    "fileSystem.write",	
+	  		"chrome://favicon/",
+	    	"storage",
+	    	"identity",
+	    	"unlimitedStorage",
+			"https://www.googleapis.com/*",
+			"https://accounts.google.com/",
+			"<all_urls>"
+	  		],
+			
+			"content_security_policy": "default-src 'self' https://apis.google.com/js/client.js; 'self' 'unsafe-inline';"
+}
